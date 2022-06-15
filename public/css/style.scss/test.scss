@@ -1,6 +1,6 @@
 //設定變數 $開頭
 
-$primary-color: rgb(139, 91, 91);
+$primary-color: rgb(165, 106, 106);
 
 body{
     font-family: Impact, "微軟正黑體";
@@ -9,7 +9,7 @@ body{
 
 .btn-primary{
     background-color: $primary-color;
-    color: antiquewhite;
+    color: rgb(255, 255, 255);
     padding: 8px;
     border-radius: 4px;
     text-decoration: none;
