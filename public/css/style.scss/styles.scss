@@ -1,0 +1,46 @@
+$primary-color:rgb(77, 76, 76);
+*{
+    margin: 0;
+    padding: 0;
+}
+ul, ol{
+    list-style-type: none;
+}
+body{
+    margin: 0;
+
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    max-width: 1140px;
+    // background-color: rgb(82, 81, 81);
+}
+
+header{
+    background-color: rgb(155, 155, 155);
+}
+header>.container>h1{
+padding-top: 20px;
+margin-bottom: 10px;
+color: rgb(252, 252, 252);
+}
+header>.container>h1>a{
+    color:$primary-color
+}
+
+header>.container>nav>ul{
+display: flex;
+// justify-content: space-between;
+}
+header>.container>nav>ul>li{
+    margin-right: 30px;
+}
+header>.container>nav>ul>li>a{
+    text-decoration: none;
+    list-style: 60px;
+    color: $primary-color;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+}
