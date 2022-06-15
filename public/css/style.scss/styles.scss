@@ -53,13 +53,45 @@ header>.container>nav>ul>li>a{
 // 內容區塊
 // ==========================================
 
+//圖片相關樣式//
 .img-fluid{
     width: 100%;
 }
+.img-rounded{
+border-radius: 8px;
+}
+
+//文字相關樣式
+
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
+
 .row{
     display: flex;
 flex-wrap: wrap;
 }
+// 四欄式
+.col-3{
+    width: calc(100%/ 4 - 30px);
+    margin: 0px 15px 40px 15px;
+    // 上右下左
+}
+// 三欄式
 .col-4{
-    width: 33.33333%;
+    width: calc(100%/ 3 - 30px);
+    margin: 0px 15px 40px 15px;
+    // 上右下左
+}
+// 二欄式
+.col-6{
+    width: calc(100%/ 2 - 30px);
+    margin: 0px 15px 40px 15px;
+    // 上右下左
 }
