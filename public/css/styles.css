@@ -33,6 +33,7 @@ header > .container > h1 > a {
 
 header > .container > nav > ul {
   display: flex;
+  padding: 20px;
 }
 
 header > .container > nav > ul > li {
