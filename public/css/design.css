@@ -109,9 +109,30 @@ div a {
 }
 
 .col-3 {
-  width: calc(100%/ 4 - 30px);
+  width: calc(100% / 4 - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
+.col-4 {
+  width: calc(100% / 3 - 30px);
+  margin: 0px 15px 40px 15px;
 }
 
 .col-9 {
-  width: calc(100%/ 1.333333 -30px);
+  width: calc(100% / 1.333333 -30px);
+}
+
+.btn-primary {
+  background-color: #a5a5a5;
+  padding: 15px;
+  color: black;
+  display: block;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  background: #6b6b6b;
+  color: #bdb3a7;
 }
