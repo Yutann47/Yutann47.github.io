@@ -88,30 +88,21 @@ border-radius: 8px;
 }
 
 .row{
-    display: flex;
+display: flex;
 flex-wrap: wrap;
+
 }
 .breadcrumb{
     display: flex;
 }
-// 四欄式
+.left{width: 20%;}
+.right{width: 80%;}
 .col-3{
     width: calc(100%/ 4 - 30px);
     margin: 0px 15px 40px 15px;
     // 上右下左
 }
-// 三欄式
-.col-4{
-    width: calc(100%/ 3 - 30px);
-    margin: 0px 15px 40px 15px;
-    // 上右下左
-}
-// 二欄式
-.col-6{
-    width: calc(100%/ 2 - 30px);
-    margin: 0px 15px 40px 15px;
-    // 上右下左
-}
+
 .col-9{
     width: calc(100%/ 1.5 -30px)
 }

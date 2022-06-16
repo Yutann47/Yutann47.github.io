@@ -92,18 +92,16 @@ header > .container > nav > ul > li > a {
   display: flex;
 }
 
+.left {
+  width: 20%;
+}
+
+.right {
+  width: 80%;
+}
+
 .col-3 {
   width: calc(100%/ 4 - 30px);
-  margin: 0px 15px 40px 15px;
-}
-
-.col-4 {
-  width: calc(100%/ 3 - 30px);
-  margin: 0px 15px 40px 15px;
-}
-
-.col-6 {
-  width: calc(100%/ 2 - 30px);
   margin: 0px 15px 40px 15px;
 }
 
