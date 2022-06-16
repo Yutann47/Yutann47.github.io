@@ -90,8 +90,9 @@ header > .container > nav > ul > li > a {
   width: 100%;
 }
 
-.breadcrumb a {
+div a {
   color: #4d4c4c;
+  text-decoration: none;
 }
 
 .w-20 {
@@ -100,4 +101,17 @@ header > .container > nav > ul > li > a {
 
 .w-80 {
   width: 80%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-3 {
+  width: calc(100%/ 4 - 30px);
+}
+
+.col-9 {
+  width: calc(100%/ 1.333333 -30px);
 }
