@@ -127,7 +127,7 @@ flex-wrap: wrap;
 .breadcrumb{
     display: flex;
 }
-@media(max-width:1200px) {
+@media(min-width:1200px) {
 .order-1{
     order: -1;
 }

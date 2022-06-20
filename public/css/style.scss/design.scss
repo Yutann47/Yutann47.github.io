@@ -148,7 +148,7 @@ flex-wrap: wrap;
   }
 }
 }
-@media(max-width:1200px) {
+@media(min-width:1200px) {
 @for $i from 1 to 12 {
   .col-lg-#{$i}{
       --num: calc(12 / #{$i});

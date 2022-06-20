@@ -246,7 +246,7 @@ div a {
     margin: 0px 15px 40px 15px;
   }
 }
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   .col-lg-1 {
     --num: calc(12 / 1);
     width: calc(100% / var(--num) - 30px);
