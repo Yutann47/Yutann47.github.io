@@ -381,10 +381,6 @@ div a {
   top: -25px;
 }
 
-.flex-space-between {
-  justify-content: space-between;
-}
-
 @media (max-width: 767px) {
   h1 {
     width: 85%;
@@ -409,17 +405,7 @@ div a {
     position: absolute;
     top: 60px;
     background-color: black;
-  }
-
-  nav {
-    left: -100vw;
-    opacity: 0;
-    transition: left 3s;
-  }
-
-  .icon-menu:hover + nav {
-    left: 0;
-    opacity: 1;
+    float: left;
   }
 
   header > .container nav.active {
@@ -433,12 +419,15 @@ div a {
   header > .container nav > ul > li {
     width: 100%;
     text-align: center;
-    border-bottom: 1px solid #4d4c4c;
+  }
+
+  .overflow-hidden {
+    overflow: hidden;
   }
 }
 @media (min-width: 768px) {
   .icon-menu {
-    text-decoration: none;
+    display: none;
   }
 }
 .fz-1 {

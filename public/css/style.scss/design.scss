@@ -202,9 +202,7 @@ transform: scale(1.5);
  top: -25px;
 }
 
-.flex-space-between{
-  justify-content: space-between;
-}
+
 // 小於767以上執行
 @media(max-width:767px){
   h1{
@@ -230,18 +228,9 @@ header >.container nav{
   position: absolute;
   top: 60px;
   background-color: rgb(0, 0, 0);
-  // float: left;
+  float: left;
 }
-nav{
-  //viewport width
-  left: -100vw;
-  opacity: 0;
-  transition: left 3s;
-}
-.icon-menu:hover+nav{
-left: 0;
-opacity: 1;
-}
+
 header >.container nav.active{
   display: block;
 }
@@ -251,19 +240,19 @@ display: block;
 header > .container nav > ul > li {
 width: 100%;
 text-align: center;
-border-bottom: 1px solid $primary-color;
+
 }
-// .overflow-hidden{
-//   overflow: hidden;
-// }
+.overflow-hidden{
+  overflow: hidden;
+}
 }
 // max-width 767 end//
 
 // 超過768以上執行
 @media(min-width:768px){
   .icon-menu{
-      // display: none;
-      text-decoration: none;
+      display: none;
+      
   }
 }
 // min-width 768 end

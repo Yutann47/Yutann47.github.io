@@ -361,11 +361,9 @@ dd > a {
 @media (max-width: 767px) {
   h1 {
     width: 85%;
-    float: left;
   }
 
   .icon-menu {
-    float: right;
     width: 15%;
     display: block;
     background-color: #684a4a;
@@ -376,7 +374,17 @@ dd > a {
 
   header > .container > nav {
     width: 100%;
-    float: left;
+  }
+
+  nav {
+    left: -100vw;
+    opacity: 0;
+    transition: left 3s;
+  }
+
+  .icon-menu:hover + nav {
+    left: 0;
+    opacity: 1;
   }
 
   header > .container > nav.active {
@@ -390,15 +398,11 @@ dd > a {
   header > nav > ul > li {
     width: 100%;
     text-align: center;
+    border-bottom: 1px solid #4d4c4c;
   }
 
   .overflow-hidden {
     overflow: hidden;
-  }
-}
-@media (min-width: 768px) {
-  .icon-menu {
-    display: none;
   }
 }
 .fz-1 {
