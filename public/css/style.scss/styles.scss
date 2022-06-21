@@ -98,7 +98,7 @@ flex-wrap: wrap;
     margin: 0px 40px 40px 15px;
   }
   
-  @for $i from 1 to 12 {
+  @for $i from 1 through 12 {
     .col-#{$i}{
         --num: calc(12 / #{$i});
         width: calc(100% / var(--num) - 30px);
@@ -107,7 +107,7 @@ flex-wrap: wrap;
   }
   
   @media(min-width:768px) {
-  @for $i from 1 to 12 {
+  @for $i from 1 through 12 {
     .col-md-#{$i}{
         --num: calc(12 / #{$i});
         width: calc(100% / var(--num) - 30px);
@@ -115,8 +115,8 @@ flex-wrap: wrap;
     }
   }
   }
-  @media(max-width:1200px) {
-  @for $i from 1 to 12 {
+  @media(min-width:1200px) {
+  @for $i from 1 through 12 {
     .col-lg-#{$i}{
         --num: calc(12 / #{$i});
         width: calc(100% / var(--num) - 30px);
@@ -202,7 +202,7 @@ dd>a{
 @media(max-width:767px){
     h1{
         width: 85%;
-        background-color: rgb(117, 88, 88);
+        // background-color: rgb(117, 88, 88);
         float: left;
     }
 .icon-menu{

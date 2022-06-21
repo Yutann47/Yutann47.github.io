@@ -159,6 +159,12 @@ header > .container > nav > ul > li > a {
   margin: 0px 15px 40px 15px;
 }
 
+.col-12 {
+  --num: calc(12 / 12);
+  width: calc(100% / var(--num) - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
 @media (min-width: 768px) {
   .col-md-1 {
     --num: calc(12 / 1);
@@ -225,8 +231,14 @@ header > .container > nav > ul > li > a {
     width: calc(100% / var(--num) - 30px);
     margin: 0px 15px 40px 15px;
   }
+
+  .col-md-12 {
+    --num: calc(12 / 12);
+    width: calc(100% / var(--num) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
 }
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   .col-lg-1 {
     --num: calc(12 / 1);
     width: calc(100% / var(--num) - 30px);
@@ -292,6 +304,12 @@ header > .container > nav > ul > li > a {
     width: calc(100% / var(--num) - 30px);
     margin: 0px 15px 40px 15px;
   }
+
+  .col-lg-12 {
+    --num: calc(12 / 12);
+    width: calc(100% / var(--num) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
 }
 .breadcrumb {
   display: flex;
@@ -343,7 +361,6 @@ dd > a {
 @media (max-width: 767px) {
   h1 {
     width: 85%;
-    background-color: #755858;
     float: left;
   }
 

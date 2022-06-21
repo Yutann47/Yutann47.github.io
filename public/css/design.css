@@ -18,10 +18,10 @@ body {
 }
 
 header {
-  background-color: #9b9b9b;
+  background-color: #7a7a7a;
 }
 
-header > .container > h1 {
+header > .container h1 {
   padding-top: 30px;
   margin-bottom: 5px;
   color: #fcfcfc;
@@ -31,19 +31,19 @@ header > .container > h1 > a {
   color: #4d4c4c;
 }
 
-header > .container > nav > ul {
+header > .container nav > ul {
   display: flex;
   padding: 20px 0 20px 0;
 }
 
-header > .container > nav > ul > li {
+header > .container nav > ul > li {
   margin-right: 20px;
 }
 
-header > .container > nav > ul > li > a {
+header > .container nav > ul > li > a {
   text-decoration: none;
   list-style: 60px;
-  color: #4d4c4c;
+  color: #b38c8c;
   font-size: 1.2em;
   letter-spacing: 2px;
 }
@@ -179,6 +179,12 @@ div a {
   margin: 0px 15px 40px 15px;
 }
 
+.col-12 {
+  --num: calc(12 / 12);
+  width: calc(100% / var(--num) - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
 @media (min-width: 768px) {
   .col-md-1 {
     --num: calc(12 / 1);
@@ -242,6 +248,12 @@ div a {
 
   .col-md-11 {
     --num: calc(12 / 11);
+    width: calc(100% / var(--num) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-md-12 {
+    --num: calc(12 / 12);
     width: calc(100% / var(--num) - 30px);
     margin: 0px 15px 40px 15px;
   }
@@ -312,6 +324,12 @@ div a {
     width: calc(100% / var(--num) - 30px);
     margin: 0px 15px 40px 15px;
   }
+
+  .col-lg-12 {
+    --num: calc(12 / 12);
+    width: calc(100% / var(--num) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
 }
 .btn-primary {
   background-color: #a5a5a5;
@@ -363,15 +381,17 @@ div a {
   top: -25px;
 }
 
+.flex-space-between {
+  justify-content: space-between;
+}
+
 @media (max-width: 767px) {
   h1 {
     width: 85%;
     background-color: #755858;
-    float: left;
   }
 
   .icon-menu {
-    float: right;
     width: 15%;
     display: block;
     background-color: #684a4a;
@@ -380,31 +400,45 @@ div a {
     text-align: center;
   }
 
-  header > .container > nav {
+  header {
+    position: relative;
+  }
+
+  header > .container nav {
     width: 100%;
-    float: left;
+    position: absolute;
+    top: 60px;
+    background-color: black;
   }
 
-  header > .container > nav.active {
+  nav {
+    left: -100vw;
+    opacity: 0;
+    transition: left 3s;
+  }
+
+  .icon-menu:hover + nav {
+    left: 0;
+    opacity: 1;
+  }
+
+  header > .container nav.active {
     display: block;
   }
 
-  header > .container > nav > ul {
+  header > .container nav > ul {
     display: block;
   }
 
-  header > nav > ul > li {
+  header > .container nav > ul > li {
     width: 100%;
     text-align: center;
-  }
-
-  .overflow-hidden {
-    overflow: hidden;
+    border-bottom: 1px solid #4d4c4c;
   }
 }
 @media (min-width: 768px) {
   .icon-menu {
-    display: none;
+    text-decoration: none;
   }
 }
 .fz-1 {
